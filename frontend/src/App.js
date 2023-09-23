@@ -1,7 +1,8 @@
 import './App.css';
+import Landing from './pages/landing';
 function App() {
     return (
-        <button className='btn btn-primary' type='button'>Base class</button>
+        <Landing/>
     )
 }
 export default App;
