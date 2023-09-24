@@ -1,6 +1,7 @@
 import React,{ useState, useLayoutEffect } from 'react';
 
 const Diagnosis = () =>  {
+    const [diagnosis, setDiagnosis] = useState("");
     const CNN = async () => {
         const fileInput = document.querySelector("#Disease").files[0];
         if(fileInput){
@@ -14,6 +15,7 @@ const Diagnosis = () =>  {
           console.log(res);
           var result = await res.json();
         }
+        setDiagnosis(result);
         console.log(result);
     }
     return (
@@ -44,6 +46,7 @@ const Diagnosis = () =>  {
             >
                 Submit
             </button>
+            <div className="mb-3 text-center">{diagnosis}</div>
         </div>
     )
 }
