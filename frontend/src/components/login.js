@@ -13,14 +13,14 @@ export default function Login() {
                     placeholder="enter your email"
                 />
             </div>
-            <div classname="mb-3">
+            <div className="mb-3">
                 <label className="form-label">Your Password</label>
                 <input type="password" className="form-control" />
             </div>
             <div className="d-flex flex-row justify-content-between">
                 <button
                     type="submit"
-                    class="btn btn-primary"
+                    className="btn btn-primary"
                     style={{ width: 100 }}
                 >
                     Submit
